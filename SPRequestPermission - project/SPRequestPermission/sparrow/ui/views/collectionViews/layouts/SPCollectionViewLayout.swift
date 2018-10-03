@@ -54,8 +54,8 @@ public class SPCollectionViewLayout: UICollectionViewFlowLayout {
             let currentPage = (velocity.x > 0.0) ? floor(rawPageValue) : ceil(rawPageValue);
             let nextPage = (velocity.x > 0.0) ? ceil(rawPageValue) : floor(rawPageValue);
             
-            let pannedLessThanAPage = fabs(1 + currentPage - rawPageValue) > 0.5;
-            let flicked = fabs(velocity.x) > 0.3
+			let pannedLessThanAPage = abs(1 + currentPage - rawPageValue) > 0.5;
+			let flicked = abs(velocity.x) > 0.3
             
             var proposedContentOffset = proposedContentOffset
             if (pannedLessThanAPage && flicked) {
@@ -70,8 +70,8 @@ public class SPCollectionViewLayout: UICollectionViewFlowLayout {
             let currentPage = (velocity.y > 0.0) ? floor(rawPageValue) : ceil(rawPageValue);
             let nextPage = (velocity.y > 0.0) ? ceil(rawPageValue) : floor(rawPageValue);
             
-            let pannedLessThanAPage = fabs(1 + currentPage - rawPageValue) > 0.5;
-            let flicked = fabs(velocity.y) > 0.3
+			let pannedLessThanAPage = abs(1 + currentPage - rawPageValue) > 0.5;
+			let flicked = abs(velocity.y) > 0.3
             
             var proposedContentOffset = proposedContentOffset
             if (pannedLessThanAPage && flicked) {
@@ -203,7 +203,7 @@ public class SPCollectionViewLayout: UICollectionViewFlowLayout {
             return
         }
         
-        collectionView.decelerationRate = UIScrollViewDecelerationRateFast
+		collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
         
         self.itemSize = SPLayout.sizeWith(widthFactor: self.widthFactor, maxWidth: self.maxWidth, heightFactor: self.heightFactor, maxHeight: self.maxHeight, relativeSideFactor: self.cellSideRatio, from: collectionView.bounds.size)
         

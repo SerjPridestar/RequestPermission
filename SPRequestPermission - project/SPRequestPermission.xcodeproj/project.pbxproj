@@ -1005,7 +1005,7 @@
 				TargetAttributes = {
 					F4BF85821E56274E007A01E8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MNM2TM9G7C;
+						DevelopmentTeam = UR64E8K793;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -1297,13 +1297,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MNM2TM9G7C;
+				DEVELOPMENT_TEAM = UR64E8K793;
 				INFOPLIST_FILE = SPRequestPermission/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = by.ivanvorobei.SPRequestPermission;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1311,13 +1311,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MNM2TM9G7C;
+				DEVELOPMENT_TEAM = UR64E8K793;
 				INFOPLIST_FILE = SPRequestPermission/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = by.ivanvorobei.SPRequestPermission;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

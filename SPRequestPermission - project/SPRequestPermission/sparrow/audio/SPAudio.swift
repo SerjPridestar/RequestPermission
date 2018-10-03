@@ -26,7 +26,11 @@ public struct SPAudio {
     
     static func notStopBackgroundMusic() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+			if #available(iOS 10.0, *) {
+				try AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default, options: .mixWithOthers)
+			} else {
+				AVAudioSession.sharedInstance().perform(NSSelectorFromString("setCategory:error:"), with: AVAudioSession.Category.ambient)
+			}
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             
